@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="Blackhell" content="Quinielas">
+    <meta name="keyword" content="NFL, Quinielas, Login, Dinero, DonQuinielas, Responsive, Fluid, Retina">
+
+    <title>Don Quinielas - Juega, Gana, Vive</title>
+
+    <!-- Twitter Bootstrap -->
+    <link href="css/login/bootstrap.css" rel="stylesheet">
+    <!-- Fuentes -->
+    <link href="fon/logints/font-awesome.css" rel="stylesheet" />
+        
+    <!-- Estilos personalizados -->
+    <link href="css/login/style.css" rel="stylesheet">
+    <link href="css/login/style-responsive.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+      <!-- **********************************************************************************************************************************************************
+    MAIN
+      *********************************************************************************************************************************************************** -->
+
+	  <div id="login-page">
+	  	<div class="container">
+		      <form class="form-login" name="form1" method="post" action="checklogin.php">
+		        <h2 class="form-login-heading">Solo estas a un paso de entrar</h2>
+		        <div class="login-wrap">
+		            <input type="text" class="form-control" placeholder="Usuario" name="username" autofocus>
+		            <br>
+		            <input type="password" class="form-control" name="password" placeholder="Contraseña">
+		            <label class="checkbox">
+		                <span class="pull-right">
+		                    <a data-toggle="modal" href="login.html#myModal"> Olvidaste tu contraseña?</a>
+		
+		                </span>
+		            </label>
+		            <button class="btn btn-theme btn-block" href="sistema/" type="submit"><i class="fa fa-lock"></i> Ingresar</button>
+		            <hr>
+		            
+		            <div class="login-social-link centered">
+		            <p>Tambien puedes accesar con alguna red social</p>
+		                <button class="btn btn-facebook" type="submit"><i class="fa fa-facebook"></i> Facebook</button>
+		                <button class="btn btn-twitter" type="submit"><i class="fa fa-twitter"></i> Twitter</button>
+		            </div>
+		            <div class="registration">
+		                No tienes una cuenta?<br/>
+		                <a class="" href="#"> <!-- Mandar a posible registro -->
+		                    Crear una cuenta
+		                </a>
+		            </div>
+		
+		        </div>
+		
+		          <!-- Modal de olvidaste tu contraseña -->
+		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+		              <div class="modal-dialog">
+		                  <div class="modal-content">
+		                      <div class="modal-header">
+		                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                          <h4 class="modal-title">Olvidaste tu contraseña?</h4>
+		                      </div>
+		                      <div class="modal-body">
+		                          <p>Ingresa tu e-mail para recuperar tu contraseña</p>
+		                          <input type="text" name="email" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
+		
+		                      </div>
+		                      <div class="modal-footer">
+		                          <button data-dismiss="modal" class="btn btn-default" type="button">Cancelar</button>
+		                          <button class="btn btn-theme" type="button">Enviar</button>
+		                      </div>
+		                  </div>
+		              </div>
+		          </div>
+		          <!-- Modal -->
+		
+		      </form>	  	
+	  	
+	  	</div>
+	  </div>
+
+    <!-- Poner esto siempre al final para que la página cargue mas rapido -->
+    <script src="js/login/jquery.js"></script>
+    <script src="js/login/bootstrap.min.js"></script>
+
+    <!--BACKSTRETCH-->
+    <!-- Es para usar una imagen de cualquier tamaño. Este script lo reduce y lo acopla a cualquier tamaño de pantalla -->  
+    <script type="text/javascript" src="js/login/jquery.backstretch.min.js"></script>
+    <script>
+        $.backstretch("img/presentacion_nfl.jpg", {speed: 500});
+    </script>
+
+
+  </body>
+</html>

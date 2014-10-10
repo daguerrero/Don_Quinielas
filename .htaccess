@@ -1,0 +1,27 @@
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+RewriteBase /
+
+# Para bloquear el listado añadir una de estas dos líneas	
+IndexIgnore * 
+
+# bloquear cualquier script que trate de establecer un valor mosConfig a través de una URL
+RewriteCond %{QUERY_STRING} mosConfig_[a-zA-Z_]{1,21}(=|\%3D) [OR]
+
+# bloquear cualquier script que trate de colocarte código codificado base64_encode a través de una URL
+RewriteCond %{QUERY_STRING} base64_encode.*(.*) [OR]
+
+# bloquea cualquier script que incluya la tag <script> en la URL
+RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3E) [NC,OR]
+
+# bloquea cualquier script que trate de modificar una variable _REQUEST a través de una URL
+RewriteCond %{QUERY_STRING} _REQUEST(=|[|\%[0-9A-Z]{0,2})
+
+# manda a todas las peticiones bloqueadas a la página principal con un error de 403 Prohibido
+RewriteRule ^(.*)$ index.php [F,L]
+
+#Evitar la descarga del archivo .htaccess
+<Files ~ "^.*.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</Files>
