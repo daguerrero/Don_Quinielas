@@ -24,19 +24,18 @@
       </aside>
 
       <!-- Main Content -->
-      <form name="prueba" form action="resultados.php" method="post">
         <section id="main-content">
           <section class="wrapper site-min-height">
             <h3><i class="fa fa-angle-right"></i>Estadisticas</h3>
             <div class="row mt">
               <div class="col-lg-12">
-                <?php include("partidos/semana6.php") ?>
+
+                <?php include("estadisticas/estadisticas.php") ?>
+                
               </div>
             </div>
-            <input type="submit" type="button" class="btn btn-primary btn-lg btn-block">
           </section>
         </section>
-      </form>
 
       <!-- Footer -->
       <footer class="site-footer">
@@ -44,7 +43,14 @@
       </footer>
     </section>
 
+    <!-- Javascripts -->
     <?php include("body/js.php") ?>
+
+    <!-- Pruebas -->
+    <script src="estadisticas/js/dataTables.bootstrap.js"></script>
+    <script src="estadisticas/js/jquery-1.11.1.min.js"></script>
+    <script src="estadisticas/js/jquery.dataTables.min.js"></script>
+    <script src="estadisticas/js/prueba.js"></script>
 
   </body>
 </html>
