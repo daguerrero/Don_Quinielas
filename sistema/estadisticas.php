@@ -1,3 +1,18 @@
+<?php
+    ///Pedimos el archivo que se conecte a la base de datos
+    require_once 'estadisticas/db.php';
+    $result;
+ 
+    $conn = dbConnect();
+    // Creamos la consulta (no se como se llame la tabla que contendra estos valores, pero este es un ejemplo)
+    $sql = 'SELECT * FROM estadisticas';
+    // Create the query and asign the result to a variable call $result
+    $result = $conn->query($sql);
+    // Extract the values from $result
+    $rows = $result->fetchAll();
+    // Since the values are an associative array we use foreach to extract the values from $rows
+ ?>
+
 <!DOCTYPE html>
 <html lang="es-MX">
   <head>
