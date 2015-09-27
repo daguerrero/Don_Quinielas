@@ -1,0 +1,59 @@
+AFC
+
+EAST
+
+BUF : Buffalo Bills
+MIA : MiamiDolphins
+NE : New England Patriots
+NYJ : New York Jets
+
+NORTH
+
+BAL : Baltimore Ravens
+CIN : Cincinnati Bengals
+CLE : Cleveland Browns
+PIT : Pittsburgh Steelers
+
+SOUTH
+
+HOU : Houston Texans
+IND : Indianapolis Colts
+JAC : Jacksonville Jaguars
+TEN : Tennessee Titans
+
+WEST
+
+DEN : Denver Broncos
+KC : Kansas City Chiefs
+OAK : Oakland Raiders
+SD : San Diego Chargers
+
+NFC
+
+EAST
+
+DAL : Dallas Cowboys
+NYG : New York Giants
+PHI : Philadelphia Eagles
+WAS : Washington_Redskins
+
+NORTH
+
+CHI : Chicago Bears
+DET : Detroit Lions
+GB : Green Bay Packers
+MIN : Minnesota Vikings
+        
+SOUTH
+
+ATL : Atlanta Falcons
+CAR : Carolina Panthers
+NO : New Orleans Saints
+TB : Tampa Bay Buccaneers
+
+WEST
+
+ARI : Arizona Cardinals
+STL : St. Louis Rams
+SF : San Francisco 49ers
+SEA : Seattle Seahawks
