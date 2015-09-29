@@ -14,7 +14,7 @@ var Post = function($scope){
  	$scope.articulos=[
  	{semana:"1", link:"semana1.html"},
  	{semana:"2", link:"semana2.html"},
- 	{semana:"3", link:"http://donquinielas.azurewebsites.net/nfl/review/semana3review.html"}
+ 	{semana:"3", link:"http://donquinielas.azurewebsites.net/nfl/review/reviewsemana3.html"}
  	];
 };
 
