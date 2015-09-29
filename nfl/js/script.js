@@ -14,7 +14,7 @@ var Post = function($scope){
  	$scope.articulos=[
  	{semana:"1", link:"semana1.html"},
  	{semana:"2", link:"semana2.html"},
- 	{semana:"3", link:"semana3.html"}
+ 	{semana:"3", link:"http://donquinielas.azurewebsites.net/nfl/index.html/nfl/semana3review.html"}
  	];
 };
 
@@ -36,7 +36,7 @@ var Notificacion = function($scope){
 var BarraLateral = function($scope){
 	$scope.barra=[
 		{titulo:"Inicio", icono:"fa fa-dashboard", link:"inicio.html"},
-		{titulo:"Partidos de la semana", icono:"fa fa-dashboard", link:"jugadoressemana.html"},
+		{titulo:"Partidos de la semana", icono:"fa fa-dashboard", link:"partidos.html"},
 		{titulo:"Resultados", icono:"fa fa-dashboard", link:"resultados.html"},
 		{titulo:"Elegidos", icono:"", link:"elegidos.html"},
 		{titulo:"Reviews", icono:"", link:"reviews.html"},
